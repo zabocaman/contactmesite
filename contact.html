@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Warren Chanansingh</title>
+  <meta name="description" content="Get in touch with Warren Chanansingh about paid media, consulting, workshops or full-time roles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a href="index.html" class="logo">Warren Chanansingh<span>.</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">My Work</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container contact-grid">
+      <div>
+        <span class="eyebrow">Contact me</span>
+        <h1>Let's build something that performs.</h1>
+        <p class="lead" style="margin-top:20px">Open to full-time roles, consulting projects, workshops and speaking. Tell me what you're working on and I'll get back to you within two business days.</p>
+
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:warren.chanansingh@hotmail.com">warren.chanansingh@hotmail.com</a></li>
+          <li><span>Phone / WhatsApp</span><a href="https://wa.me/14374224684" target="_blank" rel="noopener">+1 (437) 422-4684</a></li>
+          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/warrenchanansingh/" target="_blank" rel="noopener">in/warrenchanansingh</a></li>
+          <li><span>GitHub</span><a href="https://github.com/zabocaman" target="_blank" rel="noopener">zabocaman</a></li>
+          <li><span>Based in</span><strong>Toronto, Canada</strong></li>
+        </ul>
+      </div>
+
+      <!--
+        CONTACT FORM
+        This works on any static host. Until you connect a form service, submitting opens
+        the visitor's email app with the message pre-filled (see js/main.js).
+        To receive messages directly: create a free form at https://formspree.io,
+        then replace YOUR_FORM_ID below with your form's ID.
+      -->
+      <form id="contact-form" class="card" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <h3 style="margin-bottom:24px">Send a message</h3>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="company">Company <span class="muted" style="font-weight:400">(optional)</span></label>
+          <input id="company" name="company" type="text" autocomplete="organization">
+        </div>
+        <div class="field">
+          <label for="topic">What's this about?</label>
+          <select id="topic" name="topic">
+            <option>Full-time opportunity</option>
+            <option>Paid media consulting</option>
+            <option>Workshop or speaking</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message →</button>
+        <p class="form-note">Your details are only used to reply to you.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-row">
+      <a href="index.html" class="logo">Warren Chanansingh<span>.</span></a>
+      <ul class="social">
+        <li><a href="https://www.linkedin.com/in/warrenchanansingh/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/zabocaman" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.instagram.com/zabocaman/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="mailto:warren.chanansingh@hotmail.com">Email</a></li>
+      </ul>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Warren Chanansingh · Toronto, Canada</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
